@@ -1,7 +1,9 @@
 *{
-  --main-bg-color: #5b5b5b;
-  --side-bg-color: #787777;
-  --font-color: white;
+  --main-bg-color: #282828;
+  --side-bg-color: #414141;
+  --font-color: rgb(176, 176, 176);
+  --heading-color: white;
+  --decoration-color: rgb(205, 9, 9);
 }
 
 .App {
@@ -12,3 +14,16 @@
   color: var(--font-color);
 }
 
+.App .icon{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.App .hidden{
+  display:none
+}
+
+.App p{
+  margin: 0;
+}
