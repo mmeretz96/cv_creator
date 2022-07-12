@@ -1,0 +1,12 @@
+.About .Textarea{
+  padding: 10px 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  white-space: pre-wrap;
+}
+
+.About .Textarea:hover .hidden{
+  display: block;
+}
