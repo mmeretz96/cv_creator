@@ -1,3 +1,14 @@
+*{
+  --main-bg-color: #5b5b5b;
+  --side-bg-color: #787777;
+  --font-color: white;
+}
+
 .App {
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
+  display: flex;
+  color: var(--font-color);
 }
 
