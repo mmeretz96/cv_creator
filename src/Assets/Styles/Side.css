@@ -1,0 +1,6 @@
+.Side{
+  width: 70mm;
+  height: 297mm;
+  box-sizing: border-box;
+  background-color: var(--side-bg-color);
+}
