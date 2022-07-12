@@ -1,11 +1,12 @@
 import "../../Assets/Styles/Main.css"
+import About from "./About"
 
 const Main = () => {
 
 
   return (
     <div className="Main">
-      Main
+      <About/>
     </div>
   )
 }
