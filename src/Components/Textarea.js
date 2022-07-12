@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Pencil from "../Assets/Images/pencil.svg"
 import Check from "../Assets/Images/check.svg"
+import Editbutton from "./Editbutton"
 
 const Textarea = (props) => {
 
@@ -11,12 +12,29 @@ const Textarea = (props) => {
     setEditing(!editing)
   }
 
+  const fixCursorPos = (e) => {
+    const val = e.target.value
+    e.target.value = ""
+    e.target.value = val
+  }
+
   return (
     <div className="Textarea">
       {editing
-      ? <textarea name="about-me" id="aboutMe" cols="30" rows="5" onChange={(e)=> {setText(e.target.value)}} defaultValue={text}></textarea>
+      ? <textarea 
+          name="about-me" 
+          id="aboutMe" 
+          cols="30" 
+          rows="5" 
+          autoFocus 
+          onFocus={(e) => {fixCursorPos(e)}}
+          onChange={(e)=> {setText(e.target.value)}} 
+          defaultValue={text}
+          >
+        </textarea>
       :<p>{text}</p>}
-      <img src={editing? Check : Pencil} alt="" className="icon hidden" onClick={toggleEditing}/>
+
+      <Editbutton toggleEditing = {toggleEditing} editing = {editing}/>
     </div>
   )
 }
