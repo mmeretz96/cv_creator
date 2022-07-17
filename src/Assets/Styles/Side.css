@@ -82,11 +82,13 @@
   display:none;
 }
 
-.Side .Language:hover .add-container{
+.Side .Language:hover .add-container,
+.Side .Hobbies:hover .add-container{
   display:flex;
   justify-content: center;
   gap: 10px;
 }
+
 
 .Side .Language .Textfield,
 .Side .item-container{
@@ -166,4 +168,9 @@ input[type=range]::-ms-fill-lower {
 .Side .item-container:hover .hidden{
   display: block;
   padding-right: 10px;
+}
+
+.Side .field-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
