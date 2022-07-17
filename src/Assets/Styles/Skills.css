@@ -1,0 +1,98 @@
+
+.Skills .field-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 30px;
+}
+
+.Skills .item-container:hover .hidden{
+  display: block;
+}
+
+.Skills .Textfield,
+.Skills .item-container{
+  display:  flex;
+  padding: 5px 0;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.Skills .add-container{
+  display:none;
+}
+
+.Skills:hover .add-container{
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.Skills .container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.Skills .Slider{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Skills .Slider progress{
+  width: 100px;
+  -webkit-appearance: none;
+   appearance: none;
+   height: 9px;
+}
+
+.Skills .Slider progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 2px;
+}
+
+.Skills .Slider progress::-webkit-progress-value {
+  background-color: var(--decoration-color);
+  border-radius: 2px;
+}
+
+.Skills .Slider input{
+  width: 100px;
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+.Skills .Slider input{
+  width: 100px;
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+.Skills .Slider input:focus{
+  outline: none;
+}
+
+.Skills .Slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background: var(--decoration-color);
+}
+
+.Skills .Slider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  background: white;
+  border-radius: 2px;
+}
+
+
+input[type=range]::-ms-fill-lower {
+  background: red;
+}

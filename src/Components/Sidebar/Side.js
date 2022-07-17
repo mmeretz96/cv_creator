@@ -1,11 +1,16 @@
 import "../../Assets/Styles/Side.css"
+import Contact from "./Contact"
+import Language from "./Language"
+import Person from "./Person"
 
 const Side = () => {
 
 
   return (
     <div className="Side">
-      Side
+      <Person/>
+      <Contact/>
+      <Language/>
     </div>
   )
 }

@@ -19,7 +19,7 @@ const Textfield = (props) => {
         defaultValue={text} 
         onChange={(e)=>{setText(e.target.value)}}
         />
-      : <p>{text}</p>}
+      : <p onClick={toggleEditing}>{text}</p>}
 
       <Editbutton 
         toggleEditing = {toggleEditing} 

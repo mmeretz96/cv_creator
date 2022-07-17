@@ -1,9 +1,9 @@
 *{
   --main-bg-color: #282828;
-  --side-bg-color: #414141;
+  --side-bg-color: #555555;
   --font-color: rgb(176, 176, 176);
   --heading-color: white;
-  --decoration-color: rgb(205, 9, 9);
+  --decoration-color: rgb(192, 28, 3);
 }
 
 .App {
@@ -21,9 +21,19 @@
 }
 
 .App .hidden{
-  display:none
+  display: none;
 }
 
 .App p{
   margin: 0;
+}
+
+.App .add-container:hover{
+ cursor: pointer;
+}
+
+.App .Slider,
+.App .Textfield,
+.App .Textarea{
+  cursor: pointer;
 }

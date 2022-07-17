@@ -1,15 +1,16 @@
-import Pencil from "../Assets/Images/pencil.svg"
 import Check from "../Assets/Images/check.svg"
 
 const Editbutton = (props) => {
 
   return (
-    <img 
-      src={props.editing? Check : Pencil} 
+      <div>
+        {props.editing? <img 
+      src={props.editing? Check : null} 
       alt="" 
-      className="icon hidden" 
+      className="icon" 
       onClick={props.toggleEditing}
-      />
+      />: null}
+      </div>
   )
 }
 

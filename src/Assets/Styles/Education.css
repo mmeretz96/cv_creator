@@ -1,0 +1,69 @@
+
+.Education .container{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 10%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.Education .Textfield{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Education .Textarea{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 8px;
+  gap: 10px;
+  white-space: pre-wrap;
+}
+
+.Education .item-container:hover .hidden{
+  display: block;
+}
+
+
+.Education .container .box-heading{
+  color: var(--heading-color);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Education .container .date .Textfield{
+  text-align: right;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.Education .container .text{
+  grid-column-start: span 2;
+}
+
+.Education .container .delete {
+  padding-top: 10px;
+  grid-column-start: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.Education .add-container{
+  display:none;
+}
+
+.Education:hover .add-container{
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.Education .item-container {
+  display: flex;
+  padding: 10px 30px;
+  gap: 10px;
+}
+

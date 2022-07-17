@@ -1,6 +1,4 @@
 import { useState } from "react"
-import Pencil from "../Assets/Images/pencil.svg"
-import Check from "../Assets/Images/check.svg"
 import Editbutton from "./Editbutton"
 
 const Textarea = (props) => {
@@ -32,7 +30,7 @@ const Textarea = (props) => {
           defaultValue={text}
           >
         </textarea>
-      :<p>{text}</p>}
+      :<p onClick={toggleEditing}>{text}</p>}
 
       <Editbutton toggleEditing = {toggleEditing} editing = {editing}/>
     </div>

@@ -26,6 +26,7 @@
 
 .Main textarea{
   background-color: var(--main-bg-color);
+  filter: brightness(1.2);
   color: var(--font-color);
   resize: vertical;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -33,9 +34,19 @@
   sans-serif;
   font-size: 16px;
   flex-grow: 1;
-  border-radius: 2px;
+  border: none;
+  padding: 0;
 }
 
 .Main textarea:focus{
   outline: none;
+}
+
+.Main input{
+  background-color: var(--main-bg-color);
+  filter: brightness(1.2);
+  color: var(--font-color);
+  border: none;
+  font-size: 16px;
+  width: 90%;
 }
